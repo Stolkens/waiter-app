@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import PageTitle from "../../views/PageTitle/PageTitle";
+import TableForm from "../../features/RenderTables/TableForm/TableForm";
 
 const TableEdit = () => {
 
@@ -6,7 +8,11 @@ const TableEdit = () => {
   console.log(id)
 
   return (
-    <>bleellelelee</>
+    <>
+      <PageTitle>Table {id}</PageTitle>
+      <TableForm></TableForm>
+    </>
+    
   )
 };
 

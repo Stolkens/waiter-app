@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Table 1",
-      "status": "busy",
+      "status": "Busy",
       "peopleAmount": 3,
       "maxPeopleAmount": 4,
       "bill": 20  
@@ -42,5 +42,11 @@
       "maxPeopleAmount": 3,
       "bill": 60
     }
+  ],
+  "status": [
+    "Busy",
+    "Cleaning", 
+    "Reserved", 
+    "Free"
   ]
 }
