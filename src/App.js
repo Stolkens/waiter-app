@@ -7,7 +7,7 @@ import NotFound from './components/pages/NotFound/NotFound';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchTables } from './redux/tablesReducer';
-
+import TableEdit from './components/pages/TableEdit/TableEdit';
 
 function App() {
 
@@ -21,9 +21,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/table/:id" element={<TableEdit />} />
       </Routes>
       <Footer />
-
     </Container>
   );
 }
