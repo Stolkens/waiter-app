@@ -8,12 +8,14 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchTables } from './redux/tablesReducer';
 import TableEdit from './components/pages/TableEdit/TableEdit';
+import { fetchStatus } from './redux/statusReducer';
 
 function App() {
 
   const dispatch = useDispatch();
   
   useEffect(() => dispatch(fetchTables()), [dispatch]);
+  useEffect(() => dispatch(fetchStatus()), [dispatch]);
 
   return (
     <Container>

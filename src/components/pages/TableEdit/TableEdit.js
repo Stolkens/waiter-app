@@ -5,12 +5,11 @@ import TableForm from "../../features/RenderTables/TableForm/TableForm";
 const TableEdit = () => {
 
   const {id} = useParams();
-  console.log(id)
 
   return (
     <>
       <PageTitle>Table {id}</PageTitle>
-      <TableForm></TableForm>
+      <TableForm />
     </>
     
   )

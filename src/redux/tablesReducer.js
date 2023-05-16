@@ -1,9 +1,17 @@
 
-const createActionName = actionName => `app/tables/${actionName}`;
 
+//selectors
+export const getTables = state => state.tables;
+export const getTablesById = ({ tables }, id) => tables.find(table => table.id === id);
+
+// action names
+const createActionName = actionName => `app/tables/${actionName}`;
 const UPDATE_TABLES = createActionName('UPDATE_TABLES')
 
+// action creators
 export const updateTables = (payload) => ({type: UPDATE_TABLES, payload});
+
+
 
 export const fetchTables = () => {
   return (dispatch) => {

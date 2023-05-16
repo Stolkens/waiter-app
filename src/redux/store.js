@@ -2,12 +2,14 @@ import { combineReducers, applyMiddleware, compose } from 'redux';
 import { legacy_createStore as createStore} from 'redux'
 import initialState from './initialState';
 import tablesReducer from './tablesReducer';
+import statusReducer from './statusReducer';
 import thunk from 'redux-thunk';
 
 
 
 const subreducers = {
   tables: tablesReducer,
+  status: statusReducer,
 }
 
 const reducer = combineReducers(subreducers);

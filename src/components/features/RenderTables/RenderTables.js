@@ -1,16 +1,13 @@
 import { ListGroup } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { getTables } from "../../../redux/tablesReducer";
 
 const RenderTables = () => {
 
-  const tables = useSelector(state => state.tables);
+  const tables = useSelector(getTables);
  
-  const {id} = useParams();
-  console.log(id)
-
-
   return (
     <ListGroup>
       {tables.map(table=> 
