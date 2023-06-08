@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import PageTitle from "../../views/PageTitle/PageTitle";
-import TableForm from "../../features/RenderTables/TableForm/TableForm";
+import TableForm from "../../features/TableForm/TableForm";
 
 const TableEdit = () => {
 
